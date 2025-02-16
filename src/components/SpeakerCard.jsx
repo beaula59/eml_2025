@@ -32,8 +32,8 @@ const SpeakerCard = ({ speaker, bgIndex }) => {
         className={`w-1/3 h-full p-6 rounded-lg shadow-lg flex flex-col items-center shadow-lg m-2 transition-all duration-700 ${bgColors[bgIndex]} ${textColors[bgIndex]}`}
       >
         <img src={speaker.photo} alt={speaker.name} className="w-60 h-60 p-3" />
-        <h2 className="text-xl font-bold mt-2">{speaker.name}</h2>
-        <p className="text-gray-600">{speaker.title}</p>
+        <h2 className="text-lg font-bold mt-2">{speaker.name}</h2>
+        <p className="text-sm">{speaker.title}</p>
       </div>
       {/* <div className="flex flex-col justify-between items-center bg-[#0C223F] shadow-lg m-2 h-full p-4 text-center text-[#ACC8E2]"> */}
       <div
