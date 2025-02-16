@@ -1,8 +1,9 @@
 import React from 'react'
-import Animation from './Animation'
+import Animation from './HeroAnimation'
 
 function Hero() {
   return (
+    <>
     <section className="bg-gray-50">
     <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-xl text-center">
@@ -19,10 +20,11 @@ function Hero() {
         </div>
         </div>
     </div>
-    <div className="relative flex justify-start bottom-0">
+    </section>
+    <div className="absolute w-full max-w-screen-lg flex justify-center items-center">
       <Animation />
     </div>
-    </section>
+  </>
   )
 }
 
