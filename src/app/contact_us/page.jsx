@@ -77,13 +77,13 @@ export default function Home() {
             </p>
 
             <form className="flex flex-col items-start top-[195px] absolute ">
-              <label className="text-[16px]">Name </label>
+              <label className="text-[16px] mb-1">Name </label>
               <input type="text" className="w-[400px] h-[30px] bg-[#E63946] font-[lara] border-b-2 border-dashed border-white focus:outline-none focus:border-blue-500 p-0 text-[20px] m-0" />
-              <label className="text-[16px] mt-3">Email</label>
+              <label className="text-[16px] mt-3 mb-1">Email</label>
               <input type="text" className="w-[400px] h-[30px] bg-[#E63946] font-[lara] border-b-2 border-dashed border-white focus:outline-none focus:border-blue-500 p-0 text-[20px] m-0" />
-              <label className="text-[16px] mt-3">Message</label>
+              <label className="text-[16px] mt-3 mb-1">Message</label>
               <input type="text" className="w-[400px] h-[30px] bg-[#E63946] font-[lara] border-b-2 border-dashed border-white focus:outline-none focus:border-blue-500 p-0 text-[20px] m-0" />
-              <button className="mt-3 bg-white text-[#E63946] w-[180px] h-[45px] rounded-[60px] text-[22px] font-[merriWeather]  absolute top-[200px] left-[115px] hover:bg-gray-300 ">Send Message</button>
+              <button className="mt-4 bg-white text-[#E63946] w-[180px] h-[45px] rounded-[60px] text-[22px] font-[merriWeather]  absolute top-[200px] left-[115px] hover:bg-gray-300 ">Send Message</button>
             </form>
 
           </div>
