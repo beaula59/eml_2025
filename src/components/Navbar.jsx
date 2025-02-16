@@ -35,6 +35,7 @@ function Navbar() {
             <img src="/eml1.png" className="h-[60px] w-[60px]" alt="logo" />
           </Link>
           {["E", "M", "L"].map((letter, i) => (
+          <Link key={i} href="/">
             <div
               key={i}
               onMouseEnter={() => setIsHover(true)}
@@ -45,6 +46,7 @@ function Navbar() {
             >
               {letter}
             </div>
+            </Link>
           ))}
         </div>
         <div className="px-4 flex">
