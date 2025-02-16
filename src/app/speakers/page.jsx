@@ -22,7 +22,7 @@ const Speakers = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-white">
+    <div className="relative min-h-screen bg-white font-[lora]">
       <div className="h-screen">
         <div className="flex flex-col lg:flex-row items-center justify-center h-1/2 p-4 gap-8">
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
