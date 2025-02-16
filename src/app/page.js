@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import TextSection from "./components/TextSection";
+import Carousel from "./components/Carousel";
 
 export default function Home() {
   return (
     <>
     <Navbar />
-    <div className="font-bold text-[30px]">Home page</div>
+    <Hero/>
+    <TextSection/>
+    <Carousel/>
     </>
   );
 }
