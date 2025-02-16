@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import SpeakerList from "../components/SpeakerList";
 import SpeakerCard from "../components/SpeakerCard";

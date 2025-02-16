@@ -2,11 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; 
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   { text: "Home", href: "/" },
-  { text: "Speakers", href: "/" },
+  { text: "Speakers", href: "/speakers" },
   { text: "Team", href: "/team" },
   { text: "Brochure", href: "/" },
   { text: "Contact Us", href: "/contact_us" },
@@ -35,17 +35,23 @@ function Navbar() {
             <img src="/eml1.png" className="h-[60px] w-[60px]" alt="logo" />
           </Link>
           {["E", "M", "L"].map((letter, i) => (
-          <Link key={i} href="/">
-            <div
-              key={i}
-              onMouseEnter={() => setIsHover(true)}
-              onMouseLeave={() => setIsHover(false)}
-              className={`transition-opacity font-[merriweather] duration-1000 ease-in-out font-bold text-5xl ${
-                isHover ? "opacity-100" : "opacity-0"
-              } ${i === 0 ? "text-black pl-4" : i === 1 ? "text-blue-500" : "text-red-600"}`}
-            >
-              {letter}
-            </div>
+            <Link key={i} href="/">
+              <div
+                key={i}
+                onMouseEnter={() => setIsHover(true)}
+                onMouseLeave={() => setIsHover(false)}
+                className={`transition-opacity font-[merriweather] duration-1000 ease-in-out font-bold text-5xl ${
+                  isHover ? "opacity-100" : "opacity-0"
+                } ${
+                  i === 0
+                    ? "text-black pl-4"
+                    : i === 1
+                    ? "text-blue-500"
+                    : "text-red-600"
+                }`}
+              >
+                {letter}
+              </div>
             </Link>
           ))}
         </div>
@@ -61,7 +67,9 @@ function Navbar() {
                 <Link
                   href={item.href}
                   className={`font-[merriweather] hover:-translate-y-1 flex items-center justify-center h-full py-2 px-4 text-[19px] transition-all duration-300 ${
-                    activeIndex === index ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200" : "text-white"
+                    activeIndex === index
+                      ? "bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200"
+                      : "text-white"
                   }`}
                 >
                   {item.text}
