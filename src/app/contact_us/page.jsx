@@ -61,9 +61,7 @@ export default function Home() {
       ))}
           </div>
         <div className="relative flex flex-col items-center top-8">
-          {/* Primary Red Box */}
           <div className="relative z-20 bg-[#e63946] text-white w-[520px] h-[480px] rounded-[100px] flex flex-col items-center p-10 pt-12 shadow-lg shadow-red-700/50">
-            {/* Circular Cutout */}
             <div className="absolute -top-[100px] left-1/2 transform -translate-x-1/2 w-[150px] h-[150px] bg-white rounded-[90px] flex items-end justify-center">
               <Image
                 src="/user.png"
@@ -90,7 +88,6 @@ export default function Home() {
 
           </div>
 
-          {/* Lighter Shadow Box (Aligned Properly) */}
           <div className="absolute z-0 bg-[#e63946]/50 text-white w-[520px] h-[480px] rounded-[100px] top-[20px] left-[20px]" />
         </div>
       </div>
