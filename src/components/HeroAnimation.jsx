@@ -44,7 +44,7 @@ const AnimatedWave = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="relative w-full h-[80vh] overflow-x-clip">
       {bars.map((bar, i) => (
         <motion.div
           key={i}
