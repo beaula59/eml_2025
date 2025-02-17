@@ -21,7 +21,7 @@ function Hero() {
         </div>
     </div>
     </section>
-    <div className="absolute w-full max-w-screen-lg flex justify-center items-center">
+    <div className="mx-auto flex justify-center items-center">
       <Animation />
     </div>
   </>
