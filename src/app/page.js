@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import TextSection from "../components/TextSection";
 import Carousel from "../components/Carousel";
+import Home4 from "../components/Home4";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <Hero/>
     <TextSection/>
     <Carousel/>
+    <Home4/>
     </>
   );
 }
