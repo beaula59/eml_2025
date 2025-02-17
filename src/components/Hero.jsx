@@ -31,7 +31,7 @@ function Hero() {
         </div>
         
         {/* Animation Section */}
-        <div className="relative mx-auto flex justify-center items-center bottom-29 w-full">
+        <div className="relative mx-auto flex justify-center items-center -top-26 w-full">
           <Animation />
         </div>
 
