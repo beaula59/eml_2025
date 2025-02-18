@@ -106,7 +106,7 @@ const ImageCardCarousel = () => {
   }, [prevSlide, nextSlide]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#ACC8E2] to-[#DBDCDE] flex items-center justify-center p-4">
+    <div className="flex items-center justify-center">
       <div 
         className="relative w-full max-w-3xl"
         onTouchStart={handleTouchStart}
@@ -172,13 +172,13 @@ const ImageCardCarousel = () => {
           <ChevronIcon direction="right" />
         </button>
 
-        <button
+        {/* <button
           onClick={() => setIsPlaying(!isPlaying)}
           className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg"
           aria-label={isPlaying ? "Pause" : "Play"}
         >
           <PlayPauseIcon isPlaying={isPlaying} />
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -54,7 +54,7 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="absolute">
       
       {bars.map((bar, i) => (
         <motion.div
