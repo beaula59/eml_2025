@@ -3,27 +3,48 @@ import Menu from "../../../components/menu";
 import Head from "../../../components/head"
 import Coordinator from "../../../components/coordinator"
 
+import Navbar from "../components/Navbar"
+const coordinators = [
+  { imageSrc: "/images/Parthib Ghosh.jpg", title: "Coordinator", name: "Parthib Ghosh", rollNo: "co22btech11007" },
+  { imageSrc: "/images/Sachin Dev.jpg", title: "Coordinator", name: "Sachin Dev", rollNo: "bt23mtech11007" },
+  { imageSrc: "/images/Kankariya Aditya Rajesh.jpg", title: "Coordinator", name: "Kankariya Aditya", rollNo: "bt23btech11011" },
+  { imageSrc: "/images/Ashuthosh Shivaraj.jpg", title: "Coordinator", name: "Ashuthosh Shivaraj", rollNo: "me23btech11011" },
+];
+
 export default function DesignPR() {
   return (
-    <div className="w-full h-screen bg-white overflow-hidden">
-      <Animation />
-      <Menu />
-      <Head
-        imageSrc="/images/Aditya.jpg"
-        title="Design and PR Head"
-        name="Aditya Barwaye"
-        rollNo="co22btech11002"
-        bgColor="bg-[#1E456E]"
-        positionClass="absolute top-[120px] left-[60%] -translate-x-1/2"
-      />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 absolute top-[270px] left-[400px] mt-10 w-[800px] h-[300px] p-5">
-        <Coordinator imageSrc="/images/Parthib Ghosh.jpg" title="Coordinator" name="Parthib Ghosh" rollNo="co22btech11007" />
-        <Coordinator imageSrc="/images/Sachin Dev.jpg" title="Coordinator" name="Sachin Dev" rollNo="bt23mtech11007" />
-        <Coordinator imageSrc="/images/Kankariya Aditya Rajesh.jpg" title="Coordinator" name="Kankariya Aditya" rollNo="bt23btech11011" />
-        <Coordinator imageSrc="/images/Ashuthosh Shivaraj.jpg" title="Coordinator" name="Ashuthosh Shivaraj" rollNo="me23btech11011" />
+    <div className="w-full min-h-screen relative bg-white flex flex-col items-center overflow-hidden">
+      {/* Animation */}
+      <div className="hidden md:block w-full">
+        <Animation />
       </div>
+      <div className="flex flex-col">
+      <Navbar/>
+      <div className="flex flex-row">
+      <Menu />
 
-
+      {/* Head + Coordinators as a Column, Aligned Left */}
+      <div className="flex flex-col justify-start items-start w-full max-w-5xl gap-10 mt-[70] ml-[350]">
+        {/* Head Section */}
+        <div>
+          <Head
+            imageSrc="/images/Aditya.jpg"
+            title="Design and PR Head"
+            name="Aditya Barwaye"
+            rollNo="co22btech11002"
+            bgColor="bg-[#1D4F7C]"
+            positionClass=""
+          />
+        </div>
+        {/* Coordinators Section */}
+        <div className="flex flex-row gap-4">
+          {coordinators.map((coordinator, i) => (
+            <Coordinator key={i} {...coordinator} />
+          ))}
+        </div>
+      </div>
     </div>
+    </div>
+  </div>
   );
 }
