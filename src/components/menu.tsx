@@ -4,11 +4,11 @@ import { usePathname, useRouter } from "next/navigation";
 
 const menuItems = [
   { name: "Overall Head", path: "/" },
-  { name: "Design and PR", path: "/design-pr" },
-  { name: "Speaker Curator", path: "/speaker-curator" },
-  { name: "Logistics and Hospitality", path: "/logistics-hospitality" },
-  { name: "Web Development", path: "/web-development" },
-  { name: "Multimedia", path: "/multimedia" },
+  { name: "Design and PR", path: "../team/design-pr" },
+  { name: "Speaker Curator", path: "../team/speaker-curator" },
+  { name: "Logistics and Hospitality", path: "../team/logistics-hospitality" },
+  { name: "Web Development", path: "../team/web-development" },
+  { name: "Multimedia", path: "../team/multimedia" },
 ];
 
 const Menu = () => {
