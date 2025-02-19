@@ -5,7 +5,7 @@ const ContactCard = () => {
     <div className="
       fixed bottom-[25%] left-[60%] -translate-x-[60%] 
       w-[85vw] max-w-[500px] min-h-[25vh] max-h-[33vh]  
-      bg-custom-blue text-white 
+      bg-[#1D4F7C] text-white 
       rounded-[20px] flex items-center p-[5%] gap-[4%] shadow-lg
       transition-all duration-300 mx-4
 
