@@ -16,7 +16,8 @@ export default function Home() {
       <Menu/>
       <div className="flex flex-col">
       <Teambutton />
-      <Overall />
+      <div className="absolute top-[40%] left-[60%]"><Overall /></div>
+      
       </div>
       </div>
       </div>
@@ -24,4 +25,3 @@ export default function Home() {
     </div>
   );
 }
-
