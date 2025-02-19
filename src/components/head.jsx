@@ -1,23 +1,14 @@
-const Head = ({ imageSrc, title, name, rollNo, bgColor, textColor, positionClass }: { 
-  imageSrc: string, 
-  title: string, 
-  name: string, 
-  rollNo: string, 
-  bgColor?: string, 
-  textColor?: string, 
-  positionClass?: string 
-}) => {
+const Head = ({ imageSrc, title, name, rollNo, bgColor = "", textColor = "", positionClass = "" }) => {
   return (
     <div className={`w-[80vw] h-[28.44vw] max-w-[450px] md:h-[160px] rounded-[6%] md:rounded-[25px] flex flex-col items-center justify-center shadow-lg ${bgColor} ${positionClass} relative
       aspect-[450/160] md:aspect-auto`}>
       
       {/* Profile Image */}
-      <div className="absolute top-[-31.25%] w-[26.67%] aspect-square rounded-full border-4 border-white overflow-hidden bg-white
-        md:top-[-50px] md:w-[120px]">
+      <div className="absolute top-[-31.25%] w-[26.67%] aspect-square rounded-full border-4 border-white overflow-hidden bg-white md:top-[-50px] md:w-[120px]">
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-full h-full object-cover"
+          className="object-center"
         />
       </div>
 
