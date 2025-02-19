@@ -11,20 +11,28 @@ const SpeakersSection = () => {
         <div className="absolute flex flex-col top-0 left-0 mb-[80px]">
           <Wave/>
         </div>
-        <h2 className="relative mt-[280px] text-4xl font-bold text-[#0C223F] drop-shadow-lg">Past Speakers</h2>
+        <h2 className="relative mb-12 text-4xl font-bold text-[#0C223F] drop-shadow-lg">PAST SPEAKERS</h2>
         <CardCarousel/>
       </div>
       
       {/* Upcoming Talks Section */}
-      <div className="w-full md:w-1/2 text-center">
+      <div className="w-full md:w-1/2 text-center flex flex-col justify-between">
+        <CardCarousel/>
+        <h2 className="relative mt-[413px] text-4xl font-bold text-[#0C223F] drop-shadow-lg">UPCOMING TALKS</h2>
+        <div className="absolute mt-[737px] flex flex-col right-0 rotate-180">
+          <Wave color="#5373A6"/>
+        </div>
+      </div>
+
+      {/* <div className="w-full md:w-1/2 text-center">
         <div>
           <CardCarousel/>
-        <h2 className="text-4xl font-bold text-[#0C223F] drop-shadow-lg top-0">Upcoming Talks</h2>
+          <h2 className="text-4xl font-bold text-[#0C223F] drop-shadow-lg">Upcoming Talks</h2>
         </div>
         <div className="absolute flex flex-col bottom-0 right-0 rotate-180">
           <Wave color="#5373A6"/>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

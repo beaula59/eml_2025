@@ -112,7 +112,7 @@ const ImageCardCarousel = () => {
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        <div className="relative h-[500px] overflow-hidden">
+        <div className="overflow-hidden">
           {[-1, 0, 1].map((offset) => {
             const index = (currentIndex + offset + carouselData.length) % carouselData.length;
             const slide = carouselData[index];
@@ -121,7 +121,7 @@ const ImageCardCarousel = () => {
             return (
               <div
                 key={slide.id}
-                className={`absolute top-0 w-[80%] left-1/2 transition-all duration-500 ease-in-out transform -translate-x-1/2
+                className={`absolute w-[40%] left-1/2 transition-all duration-500 ease-in-out transform -translate-x-1/2
                   ${position === 'center' 
                     ? 'opacity-100 scale-100 z-10' 
                     : 'opacity-75 scale-90 z-0 cursor-pointer'
@@ -156,7 +156,7 @@ const ImageCardCarousel = () => {
           })}
         </div>
 
-        <button
+        {/* <button
           onClick={prevSlide}
           className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg"
           aria-label="Previous slide"
@@ -170,7 +170,7 @@ const ImageCardCarousel = () => {
           aria-label="Next slide"
         >
           <ChevronIcon direction="right" />
-        </button>
+        </button> */}
 
         {/* <button
           onClick={() => setIsPlaying(!isPlaying)}
