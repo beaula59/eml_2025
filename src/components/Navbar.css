@@ -1,0 +1,5 @@
+.spin-slow {
+    animation: spin 1s linear infinite;
+    animation-duration: 3s; /* Slower spin */
+  }
+  
