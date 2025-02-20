@@ -21,11 +21,11 @@ const SpeakerPile = ({ speakers, currentIndex, bgIndex }) => {
   const nextSpeakers = [
     ...speakers.slice(currentIndex + 1),
     ...speakers.slice(0, currentIndex),
-  ];
+  ].slice(0, 10);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-50">
-      <div className="relative w-40 h-40">
+    <div className="flex flex-col lg:flex-row items-center gap-50 scale-[0.7]">
+      <div className="relative w-40 h-40 mx-10">
         {nextSpeakers.map((speaker, index) => (
           <div
             key={speaker.id}
@@ -34,7 +34,7 @@ const SpeakerPile = ({ speakers, currentIndex, bgIndex }) => {
             }`}
             style={{
               zIndex: nextSpeakers.length - index,
-              transform: `rotate(${index * 5}deg) translate(${index * 5}px, ${
+              transform: `rotate(${index * 3}deg) translate(${index * 3}px, ${
                 index * 3
               }px)`,
             }}
@@ -42,12 +42,12 @@ const SpeakerPile = ({ speakers, currentIndex, bgIndex }) => {
             <img
               src={speaker.photo}
               alt={speaker.name}
-              className="w-full h-full object-cover rounded-lg opacity-70"
+              className="w-full h-full object-cover blur-sm rounded-lg opacity-70"
             />
           </div>
         ))}
       </div>
-      <div className="relative w-64 h-24">
+      <div className="relative w-40 h-40">
         {nextSpeakers.map((speaker, index) => (
           <div
             key={speaker.id}
@@ -56,12 +56,12 @@ const SpeakerPile = ({ speakers, currentIndex, bgIndex }) => {
             } ${textColors[(bgIndex + index) % textColors.length]}`}
             style={{
               zIndex: nextSpeakers.length - index,
-              transform: `rotate(${index * 5}deg) translate(${index * 5}px, ${
+              transform: `rotate(${index * 3}deg) translate(${index * 3}px, ${
                 index * 3
               }px)`,
             }}
           >
-            <p className="text-sm font-semibold">
+            <p className="text-sm font-semibold blur-sm">
               {speaker.description.substring(0, 50)}...
             </p>
           </div>

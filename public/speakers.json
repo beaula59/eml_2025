@@ -1,82 +1,202 @@
 [
   {
     "id": 1,
-    "name": "SP Bala Subramanyam",
-    "title": "Speaker 1 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    "moreDetails": "Details about speaker 1"
+    "name": "Dr. Ajai Chowdhry",
+    "title": "Co-founder of HCL & Padma Bhushan Awardee",
+    "photo": "../images/speakers/AjaiChowdhry.jpg",
+    "description": "Dr Ajai Chowdhry is the co-founder of HCL and a pioneer in the electronics industry in India. He has played a leading role in the establishment of the industry, serving on government committees and founding the EPIC Foundation in 2021. Regarded as the ‘father of Indian hardware’, he has been a relentless advocate of self-sufficiency in electronics. He is also an active philanthropist and has mentored and invested in over 50 startups. He has been honoured with the Padma Bhushan and numerous other awards for his contributions to the field. He was also the Chairperson of Board of Governors of IIT Hyderabad.",
+    "moreDetails": "https://en.wikipedia.org/wiki/Ajai_Chowdhry"
   },
   {
     "id": 2,
-    "name": "Full Name 2",
-    "title": "Speaker 2 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. B. N. Suresh",
+    "title": "ISRO Scientist & Padma Shri & Padma Bhushan Awardee",
+    "photo": "../images/speakers/BNSuresh.jpg",
+    "description": "Dr. B. N. Suresh is an Indian aerospace scientist and engineer who has made significant contributions to India's space program. He has served as the Director of the Vikram Sarabhai Space Centre (VSSC), which is the Indian Space Research Organisation's (ISRO) lead center for launch vehicle development. Dr. Suresh is also a prolific author and editor. He is an associate editor of the book From Fishing Hamlet To Red Planet and a co-author of Ever Upwards: ISRO in Images. Both these books trace the history of the Indian Space Research Organisation. Dr. Suresh was awarded the prestigious Indian civilian honors, Padma Bhushan and Padma Shri, in 2013 and 2002 respectively. He also received the Aryabhata Award from the Astronautical Society of India in 2009.",
     "moreDetails": "Details about speaker 2"
   },
   {
     "id": 3,
-    "name": "Full Name 3",
-    "title": "Speaker 3 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Richard Stallman",
+    "title": "Free Software Movement Activist and Programmer",
+    "photo": "../images/speakers/RichardStallman.jpg",
+    "description": "Richard Matthew Stallman, also known by his initials, RMS, is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software. Stallman launched the GNU Project, founded the Free Software Foundation (FSF) in October 1985, developed the GNU Compiler Collection and GNU Emacs, and wrote the GNU General Public License.",
     "moreDetails": "Details about speaker 3"
   },
   {
     "id": 4,
-    "name": "Full Name 4",
-    "title": "Speaker 4 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Viswanathan Mohan",
+    "title": "Indian Diabetologist & Padma Shri Awardee",
+    "photo": "../images/speakers/ViswanathanMohan.jpg",
+    "description": "Dr. Mohan is the Chairman and Chief of Diabetology at Dr. Mohan's Diabetes Specialities Centre, which is an IDF Centre of Excellence in Diabetes Care. He is also the President and Director of the Madras Diabetes Research Foundation in Chennai which is an ICMR Center for Advanced Research on Diabetes. He has also won the Padma Shri Award for his accomplishments in the field of diabetology. In 2018, he received the Harold Rifkin Distinguished International Service in the Cause of Diabetes Award from the American Diabetes Association.",
     "moreDetails": "Details about speaker 4"
   },
   {
     "id": 5,
-    "name": "Full Name 5",
-    "title": "Speaker 5 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Prof Pulickel Ajayan",
+    "title": "Pioneer of Nantechnology",
+    "photo": "../images/speakers/PulickelAjayan.jpg",
+    "description": "Prof Ajayan is a pioneer in the field of Nantechnology. He is the founding chair of Rice University's Materials Science and NanoEngineering department and also holds joint appointments with the Department of Chemistry and Department of Chemical and Biomolecular Engineering. He is known for designing and carrying out the first experiments to make nanotubes intentionally.",
     "moreDetails": "Details about speaker 5"
   },
   {
     "id": 6,
-    "name": "Full Name 6",
-    "title": "Speaker 6 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Undurti Narasimha Das",
+    "title": "Indian clinical immunologist & endocrinologist",
+    "photo": "../images/speakers/UndurtiDas.jpg",
+    "description": "Dr. Das is an elected fellow of the National Academy of Medical Sciences. He is well known for his research in the fields of Immunology, Endocrinology and Rheumatology. He serves as the Chief Medical Officer and the Chairman of the Scientific Advisory Board of Asha Nutrition Sciences, Inc. He was awarded one of the highest Indian science awards for his contributions to Medical Sciences which is the Shanti Swarup Bhatnagar Prize for Science and Technology in the year 1992. He is also the founder President and CEO of UND Life Sciences.",
     "moreDetails": "Details about speaker 6"
   },
   {
     "id": 7,
-    "name": "Full Name 7",
-    "title": "Speaker 7 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Rohini Godbole",
+    "title": "Particle Physicist & Padma Shri Awardee",
+    "photo": "../images/speakers/RohiniGodbole.jpeg",
+    "description": "Dr. Rohini Godbole is an Indian Particle Physisict at CERN. She is also a professor in Centre for Hight Energy Physics at Indian Institue of Science, Banglore (IISc). She is an elected fellow of all the three Academies of Science of India and also the Science Academy of the Developing World (TWAS). She has also held key positions in the field of Particle Physics and its research and for her contribution to Science she was awarded with the Padma Shri Award in the year 2019.",
     "moreDetails": "Details about speaker 7"
   },
   {
     "id": 8,
-    "name": "Full Name 8",
-    "title": "Speaker 8 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Padmanabhan Balaram",
+    "title": "Former Director of the Indian Institute of Science",
+    "photo": "../images/speakers/PadmanabhanBalaram.jpg",
+    "description": "Dr. Balaram is an Indian Biochemist and the former director of the Indian Institute of Science. He is a recipient of the third highest Indian civilian honour of Padma Bhushan in the year 2014 as well as the TWAS Prize. For his contribution to his field of Molecular Biophysics he was recently awarded with the 2021 R. Bruce Merrifield Award by the American Peptide Society.",
     "moreDetails": "Details about speaker 8"
   },
   {
     "id": 9,
-    "name": "Full Name 9",
-    "title": "Speaker 9 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr. Yagnaswami Sundara Rajan",
+    "title": "Scientist & Honorary Distinguished Professor in ISRO",
+    "photo": "../images/speakers/YSRajan.jpg",
+    "description": "Dr. Y. S. Rajan is an Indian Scientist and Professor. He was worked very closely with Dr. A. P. J. Abdul Kalam, former President of India. He was an Honorary Distinguished Professor in Indian Space Research Organisation.He has held various positions of responsibility related to science and technology and has shaped key policies and implemented several successful R&D projects with industry participation. For his contribution to Science and Engineering he was awarded the Padma Shri award in the year 2012. He is also the coauthor of the popular book India 2020: A Vision for the New Millennium.",
     "moreDetails": "Details about speaker 9"
   },
   {
     "id": 10,
-    "name": "Full Name 10",
-    "title": "Speaker 10 Title",
-    "photo": "sample.jpeg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "name": "Dr.Tejaswini Manogna",
+    "title": "Miss India Earth (2019).",
+    "photo": "../images/speakers/TejaswiniManogna.jpg",
+    "description": "The Pride of India. She is an internationally recognized young achiever and a meritorious MBBS graduate from OSMANIA MEDICAL COLLEGE. She is the winner of Miss Intelligent, Miss Earth 2019, Miss Talented - Miss Earth , Global People's Choice Award winner, with three Gold Medals in her feather. She is the 'Beauty with a Purpose Winner' at Miss Earth 2019 for taking ahead the project Environment India \"Purthvi Rakhshathi Rakshithaha\". She had the honor of leading ...",
     "moreDetails": "Details about speaker 10"
+  },
+  {
+    "id": 11,
+    "name": "Lt Gen (Dr) Madhuri Kanitkar",
+    "title": "AVSM & VSM",
+    "photo": "../images/speakers/MadhuriKanitkar.jpg",
+    "description": "Lieutenant General (Dr) Madhuri Kanitkar AVSM VSM is a serving General Officer in the Indian Army. She is the third woman in the Indian Armed Forces to be promoted to a Three-star rank. Gen Kanitkar has been awarded the GOC-in-C Commendation Card and has been awarded the Chief of the Army Staff Commendation Card five times. She was also awarded the Vishisht Seva Medal in 2014 and the Ati Vishisht Seva Medal in 2018.",
+    "moreDetails": ""
+  },
+  {
+    "id": 12,
+    "name": "Mr. Neelakantha Bhanu Prakash",
+    "title": "World's Fastest Human Calculator",
+    "photo": "../images/speakers/NBhanuPrakash.jpg",
+    "description": "He has been titled as the \"World's Fastest Human Calculator\". BBC described him as, \"You could say Neelakantha Bhanu Prakash is to maths what Usain Bolt is to running.\" He holds multiple records under his name including 4 World records and 50 Limca book's records. He also bagged India's first ever gold in 2020 Mental Calculation World Championship held at Mind sports Olympiad 2020. Besides his marvelous list of accomplishments, he is actively engaged in eradicating math phobia and promoting mathematics as a means to sharpen cognitive skills.",
+    "moreDetails": ""
+  },
+  {
+    "id": 13,
+    "name": "Mr. Tushar Gupta",
+    "title": "IPS",
+    "photo": "../images/speakers/TusharGupta.jpg",
+    "description": "Mr. Tushar Gupta. He is one of the youngest IPS officers in the nation. Besides serving the nation, he has been proactive in giving guidance for the UPSC examination and helping the community in the covid-19 crisis . He has been recently awarded with Disc for Exemplary Sewa to society for his exceptional community service and carrying out good work during the pandemic. Mr. Tushar Gupta is an IIT Hyderabad alumnus. He graduated from the college in 2016 with a B.Tech degree in chemical engineering.",
+    "moreDetails": ""
+  },
+  {
+    "id": 14,
+    "name": "Dr. Gagandeep Kang",
+    "title": "India's Vaccine Godmother",
+    "photo": "../images/speakers/GagandeepKang.jpg",
+    "description": "Dr. Gagandeep Kang is one of India's most eminent medical scientists. She is a leading figure in virology and played a critical role in the development and use of vaccines for rotaviruses, cholera and typhoid. Professor Kang has published over 375 papers in international and national journals. She has served as executive director of Translational Health Science and Technology Institute, Government of India. She is the first woman working in India to be elected a Fellow of the Royal Society. She is also the first Indian woman to be elected to fellowship of the American Academy of Microbiology and the only physician-scientist to receive the Infosys Award in Life Sciences. She is also a member of several advisory committees for the WHO, mainly related to research and the use of vaccines.",
+    "moreDetails": ""
+  },
+  {
+    "id": 15,
+    "name": "Pullela Gopichand",
+    "title": "Chief National Coach of India National Badminton Team",
+    "photo": "../images/speakers/PullelaGopichand.jpg",
+    "description": "Pullela Gopichand is a former Indian badminton player. Currently, he is the Chief National Coach for the India national badminton team. He won the All England Open Badminton Championships in 2001. He runs the Gopichand Badminton Academy. He received the Arjuna Award in 1999, the Dronacharya Award in 2009 and the Padma Bhushan in 2014.",
+    "moreDetails": ""
+  },
+  {
+    "id": 16,
+    "name": "DR.YV REDDY",
+    "title": "FORMER RBI GOVERNOR",
+    "photo": "../images/speakers/YVReddy.jpg",
+    "description": "Padma Vibhushan Dr. YV Reddy Sir served as governor of the Reserve Bank of India (RBI) (India's central bank) and the Chairman of the Fourteenth Finance Commission of India. He has been active in academia, and was associated with University of Hyderabad, IIT Madras, and Columbia University, New York. He served as a member of the United Nation’s Commission of Experts on Reforms of the International Monetary and Financial System.He was made an Honorary Fellow of the London School of Economics. Earlier, he was awarded Doctor of Letters (Honoris Causa) by Sri Venkateswara University, India; and Doctor of Civil Law (Honoris Causa) by the University of Mauritius.He joined Indian Administrative Service in 1964. He served in Governments of Andhra Pradesh, Government of India and World Bank, and rose to the position of Secretary (Banking) in Ministry of Finance. He moved to Reserve Bank of India as Deputy Governor, and then to International Monetary Fund in 2002 as Executive Director on the Board. Currently, he is an Honorary Professor, Centre for Economic and Social Studies (CESS), Hyderabad, India.",
+    "moreDetails": ""
+  },
+  {
+    "id": 17,
+    "name": "AMALA AKKINENI",
+    "title": "ACTRESS, SOCIAL ACTIVIST",
+    "photo": "../images/speakers/AmalaAkkineni.jpg",
+    "description": "Amala Akkineni is a former Indian film actress, Bharata Natyam dancer, and an animal welfare activist.She is best known for her works in Tamil cinema, and Telugu cinema. She has also starred in few Malayalam, Kannada, and Bollywood films. She has won two Filmfare Awards South, and a CineMAA Award.Amala is the co-founder of The Blue Cross of Hyderabad , a non-government organisation (NGO) in Hyderabad, India, which works towards the welfare of animals and preservation of animal rights in India.",
+    "moreDetails": ""
+  },
+  {
+    "id": 18,
+    "name": "ANANDA SHANKAR JAYANT",
+    "title": "CLASSICAL DANCER",
+    "photo": "../images/speakers/AnandaShankarJayant.jpg",
+    "description": "Ananda Shankar Jayant is an Indian classical dancer, choreographer, scholar and bureaucrat, known for her proficiency in the classical dance forms of Bharatanatyam and Kuchipudi. She is the first woman officer in the Indian Railway Traffic Service and her 2009 TED talk is ranked among the top twelve Incredible TED talks on cancer. She is a recipient of Sangeet Natak Akademi Award, Kalaimamani Award of the Government of Tamil Nadu and Kala Ratna Award of the Government of Andhra Pradesh. The Government of India awarded her the fourth highest civilian honour of the Padma Shri, in 2007, for her contributions to arts.",
+    "moreDetails": ""
+  },
+  {
+    "id": 19,
+    "name": "IRA TRIVEDI",
+    "title": "NOVELIST, COLUMNIST, YOGA TEACHER",
+    "photo": "../images/speakers/IraTrivedi.jpg",
+    "description": "Ira Trivedi is an Indian born author, columnist, and yoga acharya.Her works include India in Love: Marriage and Sexuality in the 21st century,What Would You Do to Save the World? The Great Indian Love Story and There's No Love on Wall Street She writes both fiction and non fiction. Her non fiction and journalism focus on issues of women and gender in India.Ira is the founder of Namami Yoga, a charity and not for profit foundation that brings yoga to the underprivileged children. The Foundation conducts yoga classes for underprivileged children in New Delhi.",
+    "moreDetails": ""
+  },
+  {
+    "id": 20,
+    "name": "G CHANDANA DEEPTI, IPS",
+    "title": "SP, MEDAK DISTRICT, TS STATE SCIENCE AND CIVIL SERVICE - 11 APRIL, 2018",
+    "photo": "../images/speakers/ChandanaDeepti.jpg",
+    "description": "Ms G Chandana Deepti is currently serving as SP of Medak District. She is an alumnus of IIT Delhi with a bachelors degree in Computer Science. She joined IPS through UPSC Civil Services Examination in the year 2012. In an interaction session with students, she shared her experiences as a police officer in various capacities, career transformation from engineering to civil services, day-to-day responsibilities and challenges in the current role. She also motivated and encouraged students by answering UPSC CS exam related questions.",
+    "moreDetails": ""
+  },
+  {
+    "id": 21,
+    "name": "S.P.BALASUBRAHMANYAM",
+    "title": "DISTINGUISHED SINGER, ACTOR, MUSIC DIRECTOR & FILM PRODUCER",
+    "photo": "../images/speakers/SPBalasubrahmanyam.jpg",
+    "description": "Mr.Sripathi Panditaradhyula Balasubrahmanyam is an Indian film playback singer, actor, music director, voice actor and film producer. He has won the Guinness World Record for recording the highest number of songs.He has won many awards National Film Award for Best Male Playback Singer, Nandi Award, National Film Awards across four languages as well as a Filmfare Award, five South Filmfare Awards and numerous state awards from Tamil Nadu and Karnataka. He is a recipient of civilian awards such as Padmashri (2001) and Padma Bhushan (2011) from the government of India.",
+    "moreDetails": ""
+  },
+  {
+    "id": 22,
+    "name": "MICHAEL KASPROWICZ",
+    "title": "AUSTRALIAN TEST CRICKETER",
+    "photo": "../images/speakers/MichaelKasprowicz.jpg",
+    "description": "He is a right arm fast bowler, effective outfielder and useful lower order batsman, and has enjoyed a successful career both in Australia and in the English county scene since making his debut for Queensland as a seventeen-year-old in the 1989–1990 domestic season. Kasprowicz was one of the top performing fast bowlers in Australian cricket over the past decade. Kasprowicz was known for his swing and relentless and hard-working approach, and was particularly known for his contributions in 2004 to Australia's success in the Indian subcontinent, where they had struggled in the past, especially with pace bowling. He was also called the \"Subcontinent Specialist\",for his unique ability to generate considerable amounts of pace from subdued tracks and in the process picking up regular wickets.",
+    "moreDetails": ""
+  },
+  {
+    "id": 23,
+    "name": "DR.BV PATTABHIRAM",
+    "title": "FORMER RBI GOVERNOR",
+    "photo": "../images/speakers/BVPattabhiram.jpg",
+    "description": "Dr. BV Pattabhiram is a Post Graduate in Psychology, Philosophy, a PG Diploma holder in Guidance and Counselling, and Ph.D. from Osmania University (Yoga & Hypnotism - A Pragmatic Approach). He has been conducting workshops on Soft Skills / HRD; and motivating Students, Teachers, Professionals, Entrepreneurs, and Leaders on various topics across India, USA, Australia, Malaysia, Thailand, Singapore and Arab Countries and helping people to overcome their Stress & Fears, and achieve the desired success.His approach to personal growth and personality development has been proven successful over 30 years of treating, motivating and counseling people. His Audiotapes on relaxation, memory, self-confidence, inferiority complex, fears, assertiveness and other psychosomatic disorders helped innumerable clients.While his field of education has been in Psychology, his passion towards the art of Magic made him one of the most celebrated Magicians of the country. He traveled to every nook and corner of the Telugu speaking states, many cities in India, and extensively across the USA, Australia, South-East Asian Countries, and Middle East.",
+    "moreDetails": ""
+  },
+  {
+    "id": 24,
+    "name": "K.K.SENTHIL KUMAR",
+    "title": "CINEMATOGRAPHER",
+    "photo": "../images/speakers/SenthilKumar.jpg",
+    "description": "Mr. K.K.Senthil Kumar, the man behind the lens of the National Award winning films like Bahubali & Eega and many more.He shared his experiences of how he stepped towards the movies and cinematography .He described his journey from his first movie to the national award winning film ‘BAHUBALI’ and also shared his main motivation to select photography as his field of work.",
+    "moreDetails": ""
+  },
+  {
+    "id": 25,
+    "name": "R.K. PALIWAL",
+    "title": "DIRECTOR-GENERAL, INCOME TAX (INVESTIGATION)",
+    "photo": "../images/speakers/Paliwal.jpg",
+    "description": "Well-known Hindi playwright and author of who has received many literary awards for his books 'Angrez Kothi', Banspur ki Uttarkatha', and 'Gandhi Jivan our Vichar', a biography of Mahatma Gandhi. His two plays are 'Kasturba' and 'Gandhi ki Chargesheet'. Doordarshan made two telefilms on his two humorous short stories. He is presently Director-General in the Department of Indian Revenue Service for the states of Telangana, Andhra Pradesh, and Odisha. He actively participates in rural development on Gandhian principles.",
+    "moreDetails": ""
   }
 ]
