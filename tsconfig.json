@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/animation.jsx", "src/components/menu.jsx", "src/components/head.jsx", "src/app/team/design-pr/page.jsx", "src/components/coordinator.jsx", "src/components/Overall.jsx", "src/components/team-button.jsx", "src/app/team/page.jsx", "src/app/team/speaker-curator/page.jsx", "src/app/team/web-development/page.jsx", "src/app/team/logistics-hospitality/page.jsx", "src/app/team/multimedia/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
