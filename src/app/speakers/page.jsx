@@ -77,11 +77,11 @@ const Speakers = () => {
 
       {/* <div className="mt-[85px]"> */}
       <div className="hidden laptop:block">
-        <div className="absolute left-0 top-[85px] flex">
-          {[...Array(16)].map((_, i) => (
+        <div className="absolute left-0 top-[65px] flex">
+          {[...Array(14)].map((_, i) => (
             <div
               key={`top-left-${i}`}
-              className={`animate-wave-top ${heights[i]} ${colors[i]}  w-[50px] bg-[#5373A6] rounded-b-[150px]`}
+              className={`animate-wave-top ${heights[i]} ${colors[i]} w-[50px] rounded-b-[150px]`}
               style={{
                 animationDelay: `${i * 0.2}s`,
                 marginLeft: i === 0 ? "0" : "20px",
@@ -110,10 +110,10 @@ const Speakers = () => {
               }}
             />
           ))} */}
-          {[...Array(16)].map((_, i) => (
+          {[...Array(14)].map((_, i) => (
             <div
               key={`bottom-right-${i}`}
-              className={`absolute animate-wave-bottom bottom-0 right-0 ${heights[i]} ${colors[i]} w-[50px] bg-[#E63946] rounded-t-[100px]`}
+              className={`absolute animate-wave-bottom bottom-0 right-0 ${heights[i]} ${colors[i]} w-[50px] rounded-t-[100px]`}
               style={{
                 animationDelay: `${i * 0.2}s`,
                 marginRight: i === 0 ? "0" : `${i * 70}px`,
@@ -122,8 +122,8 @@ const Speakers = () => {
           ))}
         </div>
       </div>
-      <div className="flex-grow flex flex-col laptop:flex-row items-start justify-center gap-2 overflow-hidden my-[40px]">
-        <div className="flex flex-col items-center justify-start w-full">
+      <div className="flex-grow flex flex-col laptop:flex-row items-start justify-center gap-2 laptop:overflow-hidden my-[40px]">
+        <div className="flex flex-col items-center justify-start w-full h-full">
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
           <div className="hidden laptop:flex items-start w-full h-full">
             <SpeakerPile
@@ -133,7 +133,7 @@ const Speakers = () => {
             />
           </div>
         </div>
-        <div className="hidden laptop:block w-1/3 h-full overflow-hidden">
+        <div className="hidden laptop:block w-1/3 h-full">
           <SpeakerList
             speakers={speakers}
             currentIndex={currentIndex}
@@ -143,9 +143,9 @@ const Speakers = () => {
         <div className="laptop:hidden">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="fixed top-20 right-10 bg-[#0C223F] text-white p-2 rounded-full z-50 mt-10"
+            className="fixed top-10 right-10 bg-[#0C223F] text-white p-2 rounded-full z-50 mt-10"
           >
-            {isMobileMenuOpen ? "Close" : "Speakers"}
+            {isMobileMenuOpen ? "Close" : "Speakers Menu"}
           </button>
           <MobileSpeakerList
             speakers={speakers}

@@ -34,10 +34,10 @@ function Navbar() {
   return (
     <>
       <div className="hidden justify-center items-center md:flex z-50">
-        <nav className="w-screen shadow-xl items-center justify-between h-[85px] flex bg-[#0C223F] backdrop-blur-lg z-50 transition-all duration-300 top-[60px]">
+        <nav className="w-screen shadow-xl items-center justify-between h-[65px] flex bg-[#0C223F] backdrop-blur-lg z-50 transition-all duration-300 top-[60px]">
           <div className="ml-7 flex items-center">
             <Link href="/">
-              <img src="/eml1.png" className="h-[60px] w-[60px]" alt="logo" />
+              <img src="/eml1.png" className="h-[50px] w-[50px]" alt="logo" />
             </Link>
             {["E", "M", "L"].map((letter, i) => (
               <Link key={i} href="/">

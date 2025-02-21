@@ -26,7 +26,8 @@ const SpeakerList = ({ speakers, currentIndex, setCurrentIndex }) => {
             className="w-10 h-10 rounded-full mr-3 border-2 border-white shadow"
           />
           <span className="font-semibold laptop:text-sm">
-            {speaker.name.toUpperCase()}
+            {/* {speaker.name.toUpperCase()} */}
+            {speaker.name}
           </span>
         </div>
       ))}
