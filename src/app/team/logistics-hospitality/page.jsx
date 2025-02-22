@@ -42,16 +42,16 @@ export default function LogisticsAndHospitality() {
             />
 
             {/* Coordinators Section */}
-            <div className="flex flex-col items-start mt-7">
+            <div className="flex flex-col items-start -mt-2">
               {/* First Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {coordinators.slice(0, 4).map((coordinator, i) => (
                   <Coordinator key={i} {...coordinator} />
                 ))}
               </div>
 
               {/* Second Row (Shifted Right) */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-2 ml-[90px]">
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6 items-center">
                 {coordinators.slice(4).map((coordinator, i) => (
                   <Coordinator key={i + 4} {...coordinator} />
                 ))}

@@ -6,7 +6,7 @@ import Navbar from "../../../components/Navbar";
 
 const coordinators = [
   { imageSrc: "/images/Harshita Bansal.jpg", title: "Coordinator", name: "Harshita Bansal", rollNo: "bt24mtech11015" },
-  { imageSrc: "/images/Aastha.jpg", title: "Coordinator", name: "Aastha", rollNo: "co23btech11001" },
+  { imageSrc: "/images/Aastha .jpg", title: "Coordinator", name: "Aastha", rollNo: "co23btech11001" },
   { imageSrc: "/images/Somani Ankita.jpg", title: "Coordinator", name: "Ankita Somani", rollNo: "bm23btech11022" },
   { imageSrc: "/images/Aryan Raj.jpg", title: "Coordinator", name: "Aryan Raj", rollNo: "bt23btech11004" },
   { imageSrc: "/images/Renuka Sonawane.jpg", title: "Coordinator", name: "Renuka Sonawane", rollNo: "mp24mscst14006" },
@@ -29,7 +29,6 @@ export default function SpeakerCurator() {
 
           {/* Head + Coordinators Section */}
           <div className="flex flex-col justify-start items-start w-full max-w-5xl gap-10 mt-[70px] ml-[350px]">
-            {/* Head Section */}
             <Head 
               imageSrc="/images/Soumik Roy.jpeg" 
               title="Speaker Curator Head" 
@@ -39,20 +38,20 @@ export default function SpeakerCurator() {
             />
 
             {/* Coordinators Section */}
-            <div className="flex flex-col items-start">
+            <div className="flex flex-col mt-[-2px]">
               {/* First Row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-4 gap-4">
                 {coordinators.slice(0, 4).map((coordinator, i) => (
                   <Coordinator key={i} {...coordinator} />
                 ))}
               </div>
 
-              {/* Second Row (Shifted Right) */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-2 ml-[90px]">
+              <div className="grid grid-cols-4 gap-4 mt-5">
                 {coordinators.slice(4).map((coordinator, i) => (
                   <Coordinator key={i + 4} {...coordinator} />
                 ))}
               </div>
+
             </div>
           </div> 
         </div>

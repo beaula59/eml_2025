@@ -40,11 +40,11 @@ export default function WebDevelopment() {
             />
             
             {/* Coordinators Section */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 w-full">
-              {coordinators.map((coordinator, i) => (
-                <Coordinator key={i} {...coordinator} />
-              ))}
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                {coordinators.slice(0, 4).map((coordinator, i) => (
+                  <Coordinator key={i} {...coordinator} />
+                ))}
+              </div>
           </div>
         </div>
       </div>

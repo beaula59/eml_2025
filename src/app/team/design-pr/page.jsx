@@ -27,8 +27,7 @@ export default function DesignPR() {
         {/* Responsive Layout */}
         <div className="flex flex-col md:flex-row w-full">
           <Menu />
-          
-          {/* Head + Coordinators as a Column, Aligned Left */}
+        
           <div className="flex flex-col justify-start items-center md:items-start w-full max-w-5xl gap-10 mt-[70px] md:ml-[350px] px-4">
             {/* Head Section */}
             <Head
@@ -40,11 +39,11 @@ export default function DesignPR() {
             />
             
             {/* Coordinators Section */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 w-full">
-              {coordinators.map((coordinator, i) => (
-                <Coordinator key={i} {...coordinator} />
-              ))}
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                {coordinators.slice(0, 4).map((coordinator, i) => (
+                  <Coordinator key={i} {...coordinator} />
+                ))}
+              </div>
           </div>
         </div>
       </div>

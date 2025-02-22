@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div className="bg-white mx-auto">
       {/* Top Left Animation */}
-      <div className="absolute top-[70px] left-5 flex gap-4">
+      <div className="absolute top-[50px] left-5 flex gap-4">
         {rectangles.map((rect, i) => (
           <motion.div
             key={`top-left-${i}`}
