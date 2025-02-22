@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Home, Users, FileText,Mail } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faHeadset } from "@fortawesome/free-solid-svg-icons";
+import './Navbar.css';
 
 const menuItems = [
   { icon: Home, text: "Home", href: "/" },
@@ -42,10 +43,10 @@ function Navbar() {
   return (
     <>
       <div className="hidden justify-center items-center md:flex z-50">
-        <nav className="w-screen shadow-xl items-center justify-between h-[65px] flex bg-[#0C223F] backdrop-blur-lg z-50 transition-all duration-300 top-[60px]">
+        <nav className="w-screen shadow-xl items-center justify-between h-[70px] flex bg-[#0C223F] backdrop-blur-lg z-50 transition-all duration-300 top-[60px]">
           <div className="ml-7 flex items-center">
             <Link href="/">
-              <img src="/eml1.png" className="h-[50px] w-[50px]" alt="logo" />
+              <img src="/eml1.png" className="spin-slow h-[50px] w-[50px]" alt="logo" />
             </Link>
             {["E", "M", "L"].map((letter, i) => (
               <Link key={i} href="/">
@@ -53,7 +54,7 @@ function Navbar() {
                   key={i}
                   onMouseEnter={() => setIsHover(true)}
                   onMouseLeave={() => setIsHover(false)}
-                  className={`transition-opacity font-[merriweather] duration-1000 ease-in-out font-bold text-5xl ${
+                  className={`transition-opacity font-[merriweather] duration-1000 ease-in-out font-bold text-5xl lg:flex hidden ${
                     isHover ? "opacity-100" : "opacity-0"
                   } ${
                     i === 0
@@ -118,6 +119,8 @@ function Navbar() {
           </div>
         </nav>
       </div>
+
+      
       <div className="flex justify-between items-center md:hidden h-[60px] w-screen">
         <Link href="/">
           <img
@@ -154,7 +157,7 @@ function Navbar() {
         </button>
       </div>
       <div
-        className={`fixed w-screen h-scree inset-y-0 right-0 bg-gradient-to-t from-red-400 rounded-tl-[0px] rounded-bl-[0px] to-blue-300 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed w-screen h-screen inset-y-0 right-0 bg-gradient-to-t from-red-400 rounded-tl-[0px] rounded-bl-[0px] to-blue-300 transform transition-transform duration-500 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden z-40 `}
       >
