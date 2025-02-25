@@ -7,9 +7,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--text-primary)",
+      },
+      fontSize: {
+        medium: "var(--text-md)",
+        small: "var(--text-sm)",
       },
       screens: {
         laptop: "1024px",
