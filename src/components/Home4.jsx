@@ -1,40 +1,49 @@
 "use client";
-import React from "react";
-import CardCarousel from "./CardCarousel";
-import Wave from "./WaveAnimation";
+import React from 'react'
+import CardCarousel from './CardCarousel'
+import Wave from './WaveAnimation'
 
-const SpeakersSection = () => {
+function Home4() {
   return (
-    <div className="relative flex flex-col md:flex-row justify-center items-center gap-10 h-[100vh] p-10 mb-10">
-      {/* Past Speakers Section */}
-      <div className="w-full md:w-1/2 text-center flex flex-col justify-between">
-        <div className="absolute flex flex-col top-0 left-0 mb-[80px]">
-          <Wave/>
+    <div className="container-fluid mx-auto text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="relative text-white min-h-screen">
+          <div className="flex flex-col h-full justify-between">
+            <div className='absolute -top-10'>
+              <Wave />
+            </div>
+            <div className="">
+                <div className="absolute bottom-[10%] lg:bottom-[0%] w-full max-w-3xl h-[68%] lg:h-[80%]">
+                  <h2 className="relative text-4xl font-bold text-[#0C223F] drop-shadow-lg text-center mt-[0%] lg:mt-[5%] mb-5">
+                      PAST SPEAKERS
+                  </h2>
+                  <div className="">
+                    <CardCarousel />
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        <h2 className="relative mb-12 text-4xl font-bold text-[#0C223F] drop-shadow-lg">PAST SPEAKERS</h2>
-        <CardCarousel/>
+        <div className="relative h-[100vh] text-white min-h-screen">
+          <div className="flex flex-col h-full justify-between">
+            <div className="">
+                <div className="absolute p-5 w-full max-w-3xl h-[500px]">
+                  <div className="h-[400px]">
+                    <CardCarousel />
+                  </div>
+                  <h2 className="relative mt-[20%] lg:mt-[0%] text-4xl font-bold text-[#0C223F] drop-shadow-lg text-center">
+                      UPCOMING TALKS
+                  </h2>
+                </div>
+            </div>
+            <div className='absolute rotate-180 -bottom-5 right-0'>
+                    <Wave color='#5373A6' />
+                  </div>
+          </div>
+        </div>
       </div>
-      
-      {/* Upcoming Talks Section */}
-      <div className="w-full md:w-1/2 text-center flex flex-col justify-between">
-        <CardCarousel/>
-        <h2 className="relative mt-[413px] text-4xl font-bold text-[#0C223F] drop-shadow-lg">UPCOMING TALKS</h2>
-        <div className="absolute mt-[737px] flex flex-col right-0 rotate-180">
-          <Wave color="#5373A6"/>
-        </div>
-      </div>
-
-      {/* <div className="w-full md:w-1/2 text-center">
-        <div>
-          <CardCarousel/>
-          <h2 className="text-4xl font-bold text-[#0C223F] drop-shadow-lg">Upcoming Talks</h2>
-        </div>
-        <div className="absolute flex flex-col bottom-0 right-0 rotate-180">
-          <Wave color="#5373A6"/>
-        </div>
-      </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default SpeakersSection;
+export default Home4

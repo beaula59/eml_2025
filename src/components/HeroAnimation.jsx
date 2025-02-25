@@ -25,7 +25,7 @@ const AnimatedWave = () => {
   useEffect(() => {
     const updatePositions = () => {
       const screenWidth = window.innerWidth;
-      const scaleFactor = screenWidth / 1440; // Scale positions based on 1440px reference width
+      const scaleFactor = screenWidth / 1440;
 
       const updatedBars = baseBars.map((bar) => ({
         ...bar,
@@ -44,7 +44,7 @@ const AnimatedWave = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[80vh] overflow-x-clip">
+    <div className="relative w-full overflow-x-clip">
       {bars.map((bar, i) => (
         <motion.div
           key={i}

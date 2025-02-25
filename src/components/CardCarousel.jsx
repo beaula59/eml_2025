@@ -170,9 +170,9 @@ const ImageCardCarousel = () => {
           aria-label="Next slide"
         >
           <ChevronIcon direction="right" />
-        </button> */}
+        </button>
 
-        {/* <button
+        <button
           onClick={() => setIsPlaying(!isPlaying)}
           className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg"
           aria-label={isPlaying ? "Pause" : "Play"}

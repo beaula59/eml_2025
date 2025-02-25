@@ -35,8 +35,10 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
   useEffect(() => {
     const updatePositions = () => {
       const screenWidth = window.innerWidth;
-      const scaleFactor = screenWidth / (2040); // Scale positions based on 1440px reference width
-
+      const baseWidth = 2440; // Reference width for scaling (adjust as needed)
+      
+      const scaleFactor = Math.max(0.5, screenWidth / baseWidth); // Set a minimum scale of 0.5
+  
       const updatedBars = baseBars.map((bar) => ({
         ...bar,
         width: bar.width * scaleFactor,
@@ -44,7 +46,7 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
         left: bar.left * scaleFactor,
         top: bar.top * scaleFactor,
       }));
-
+  
       setBars(updatedBars);
     };
 
@@ -54,7 +56,8 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
   }, []);
 
   return (
-    <div className="absolute">
+    <div className="relative">
+      <div className="absolute">
       
       {bars.map((bar, i) => (
         <motion.div
@@ -70,6 +73,7 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
           }}
         />
       ))}
+    </div>
     </div>
   );
 };
