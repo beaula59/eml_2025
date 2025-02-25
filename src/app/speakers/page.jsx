@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import SpeakerList from "../../components/SpeakerList";
 import SpeakerCard from "../../components/SpeakerCard";
-import SpeakerPile from "../../components/SpeakerPile";
+// import SpeakerPile from "../../components/SpeakerPile";
 import MobileSpeakerList from "../../components/MobileSpeakerList";
 import speakers from "../../../public/speakers.json";
 import Navbar from "../../components/Navbar";
@@ -123,15 +123,15 @@ const Speakers = () => {
         </div>
       </div>
       <div className="flex-grow flex flex-col laptop:flex-row items-start justify-center gap-2 laptop:overflow-hidden my-[40px]">
-        <div className="flex flex-col items-center justify-start w-full h-full">
+        <div className="flex flex-col items-center justify-start w-full h-full laptop:mt-10">
           <SpeakerCard speaker={speakers[currentIndex]} bgIndex={bgIndex} />
-          <div className="hidden laptop:flex items-start w-full h-full">
+          {/* <div className="hidden laptop:flex items-start w-full h-full">
             <SpeakerPile
               speakers={speakers}
               currentIndex={currentIndex}
               bgIndex={bgIndex}
             />
-          </div>
+          </div> */}
         </div>
         <div className="hidden laptop:block w-1/3 h-full">
           <SpeakerList

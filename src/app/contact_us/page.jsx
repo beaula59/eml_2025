@@ -98,22 +98,22 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="relative flex-1 flex justify-center items-center px-4 py-8 min-h-[calc(100vh-70px)]">
-          <div className="relative w-full max-w-[520px] mt-[60px]">
-            <div className="relative z-20 bg-[#e63946] text-white w-full rounded-[30px] sm:rounded-[40px] lg:rounded-[100px] p-6 sm:p-8 lg:p-10 lg:pb-6 shadow-lg">
-              <div className="absolute -top-[60px] sm:-top-[75px] lg:-top-[100px] left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[150px] lg:h-[148px] bg-white rounded-full flex items-center justify-center">
+        <div className="relative flex-1 flex justify-center items-center px-4 py-8 min-h-[calc(100vh-85px)]">
+          <div className="relative w-full max-w-[550px] mt-[30px]">
+            <div className="relative z-20 bg-[#e63946] text-white w-full rounded-[30px] sm:rounded-[40px] lg:rounded-[100px] p-6 sm:p-8 lg:p-4 shadow-lg">
+              <div className="absolute -top-[60px] sm:-top-[75px] lg:-top-[70px] left-1/2 transform -translate-x-1/2 w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[110px] lg:h-[100px] bg-white rounded-full flex items-center justify-center">
                 <img
                   src="./user.png"
                   alt="Profile"
-                  className="w-20 h-20 sm:w-20 sm:h-20 lg:w-[110px] lg:h-[110px] object-contain"
+                  className="w-20 h-20 sm:w-24 sm:h-24 lg:w-16 lg:h-16 object-contain"
                 />
               </div>
 
-              <div className="md:mt-2 mt-5">
-                <h2 className="text-[21px] sm:text-[27px] lg:text-[34px] font-semibold font-[merriweather] text-center">
+              <div className="md:mt-3 mt-4">
+                <h2 className="text-[22px] sm:text-[28px] lg:text-[25px] font-semibold font-[merriweather] text-center">
                   Love to Hear From You
                 </h2>
-                <p className="text-[12px] sm:text-[14px] lg:text-[16px] font-[merriweather] text-center opacity-90">
+                <p className="text-[13px] w-full max-w-[400px] mx-auto sm:text-[15px] lg:text-[1rem] font-[merriweather] text-center opacity-90">
                   Want to suggest personality for the talk or willing to speak
                   at one of our Extra Mural Lectures, we would love to hear you.
                   Here is how you can contact us.
@@ -134,7 +134,7 @@ export default function Contact() {
                       autoComplete="off"
                       type="text"
                       name="name"
-                      className="w-full h-[30px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none focus:border-blue-500 p-0 text-[16px] sm:text-[18px] lg:text-[20px]"
+                      className="w-full h-[20px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none focus:border-blue-500 p-0 text-[16px] sm:text-[18px] lg:text-[20px]"
                     />
                   </div>
 
@@ -144,7 +144,7 @@ export default function Contact() {
                       autoComplete="off"
                       type="email"
                       name="email"
-                      className="focus:border-blue-500 w-full h-[30px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none p-0 text-[16px] sm:text-[18px] lg:text-[20px]"
+                      className="focus:border-blue-500 w-full h-[20px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none p-0 text-[16px] sm:text-[18px] lg:text-[20px]"
                     />
                   </div>
 
@@ -156,7 +156,7 @@ export default function Contact() {
                       autoComplete="off"
                       type="text"
                       name="message"
-                      className="focus:border-blue-500 w-full h-[30px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none p-0 text-[16px] sm:text-[18px] lg:text-[20px] resize-none"
+                      className="focus:border-blue-500 w-full h-[20px] bg-[#E63946] font-serif border-b-2 border-dashed border-white focus:outline-none p-0 text-[16px] sm:text-[18px] lg:text-[20px] resize-none"
                     />
                   </div>
 
@@ -164,7 +164,7 @@ export default function Contact() {
                     <button
                       onClick={handleShowNotification}
                       type="submit"
-                      className="bg-white text-[#E63946] px-8 py-3 rounded-full text-[18px] sm:text-[20px] lg:text-[20px] font-[lora] hover:bg-gray-200 transform transition-all duration-200 active:scale-95 hover:scale-110 "
+                      className="bg-white text-[#E63946] px-6 py-1 rounded-full text-[18px] sm:text-[20px] lg:text-[20px] font-[lora] hover:bg-gray-200 transform transition-all duration-200 active:scale-95 hover:scale-110 "
                     >
                       Send Message
                     </button>

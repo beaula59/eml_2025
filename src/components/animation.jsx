@@ -14,7 +14,7 @@ const rectangles = [
 
 export default function Page() {
   return (
-    <div className="bg-white mx-auto">
+    <div className="bg-gray-50 mx-auto">
       {/* Top Left Animation */}
       <div className="absolute top-[50px] left-5 flex gap-4">
         {rectangles.map((rect, i) => (
