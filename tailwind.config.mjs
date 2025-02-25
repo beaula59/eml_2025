@@ -19,6 +19,9 @@ export default {
         medium: "var(--text-md)",
         small: "var(--text-sm)",
       },
+      screens: {
+        laptop: "1024px",
+      },
     },
   },
   plugins: [],
