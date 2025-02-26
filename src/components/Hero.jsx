@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 import Animation from './HeroAnimation';
 import { motion } from "framer-motion";
+import { useState,useEffect } from 'react';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -8,6 +10,53 @@ const fadeInUp = {
 };
 
 function Hero() {
+
+  
+  const [text, setText] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [loopNum, setLoopNum] = useState(0)
+  const [typingSpeed, setTypingSpeed] = useState(100)
+  const [isFinished, setIsFinished] = useState(false)
+
+  const words = ["Extra fun league?","Endless Meme Lovers?", "EXTRA-MURAL LECTURES"]
+  const deleteSpeed = 100
+  const pauseBeforeDelete = 1000
+  const pauseBeforeType = 500
+
+  useEffect(() => {
+    const currentWord = words[loopNum]
+    const isLastWord = loopNum === words.length - 1
+
+    const handleTyping = () => {
+      if (!isDeleting) {
+        if (text.length < currentWord.length) {
+          setText(currentWord.slice(0, text.length + 1))
+          setTypingSpeed(150)
+        } else if (isLastWord) {
+          setIsFinished(true)
+          return
+        } else {
+          setTimeout(() => setIsDeleting(true), pauseBeforeDelete)
+          return
+        }
+      } else {
+        if (text.length > 0) {
+          setText(currentWord.slice(0, text.length - 1))
+          setTypingSpeed(deleteSpeed)
+        } else {
+          setIsDeleting(false)
+          setLoopNum(loopNum + 1)
+          setTypingSpeed(pauseBeforeType)
+        }
+      }
+    }
+
+    if (!isFinished) {
+      const timer = setTimeout(handleTyping, typingSpeed)
+      return () => clearTimeout(timer)
+    }
+  }, [text, isDeleting, loopNum, typingSpeed, isFinished])
+
   return (
     <motion.section
       className="bg-gray-50 min-h-screen relative"
@@ -31,7 +80,8 @@ function Hero() {
             <motion.div className="text-center lg:text-left" variants={fadeInUp}>
               {/* Main Heading */}
               <motion.h1 className="w-full lg:w-[28rem] font-merriweather font-bold text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[2.5rem] sm:leading-[3rem] md:leading-[3.5rem] lg:leading-[4rem] text-[#1D4F7C] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]" variants={fadeInUp}>
-                EXTRA-MURAL LECTURES
+              <span>{text}</span>
+              {!isFinished && <span className="inline-block md:w-1 w-[3px] h-7 md:h-11 bg-gradient-to-b from-red-500 to-blue-500 animate-pulse ml-1"></span>}
               </motion.h1>
               {/* Subtitle */}
               <motion.p className="w-full lg:w-[20rem] font-merriweather font-normal text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[1.5rem] sm:leading-[1.75rem] lg:leading-[1.75rem] text-black" variants={fadeInUp}>
