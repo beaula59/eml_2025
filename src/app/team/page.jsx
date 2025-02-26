@@ -40,7 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024 && window.innerHeight > 600);
+      setIsLargeScreen(window.innerWidth >= 1024);
     };
 
     checkScreenSize();
