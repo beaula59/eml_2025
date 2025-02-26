@@ -98,11 +98,29 @@ function Hero() {
         </motion.div>
       </div>
 
+      {/* Animation Section */}
       <motion.div className="relative mx-auto flex justify-center items-center top-2 md:top-6 w-full" variants={fadeInUp}>
-        <Animation />
-      </motion.div>
-    </motion.section>
-  );
+              <Animation />
+            </motion.div>
+
+            <motion.div
+              className="mb-12 mt-5 md:-mt-6"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+            >
+              <div className="mx-auto max-w-xl text-left text-primary font-playfair italic p-5 ">
+                <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+                  "STORIES MATTER...,
+                </h1>
+                <p className="mt-4 text-base sm:text-lg md:text-xl ">
+                EML invites individuals from diverse backgrounds to share their life experiences. Here we dive into the depths of infinity and emerge with stories that inspire, challenge, and transform. The limitless potential of the human spirit is not just recognized — it’s celebrated."
+                </p>
+              </div>
+            </motion.div>
+          </motion.section>
+        );
 }
 
 export default Hero;
