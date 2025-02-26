@@ -49,13 +49,6 @@ const Speakers = () => {
     "bg-[#DF231D]",
     "bg-[#1D4F7C]",
   ];
-  // const circleColors = [
-  //   "bg-[#1D4F7C]",
-  //   "bg-[#D9D9D9]",
-  //   "bg-[#DF231D]",
-  //   "bg-[#1D4F7C]",
-  //   "bg-[#ACC8E2]",
-  // ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -74,8 +67,6 @@ const Speakers = () => {
   return (
     <div className="flex flex-col h-screen bg-white font-[lora]">
       <Navbar />
-
-      {/* <div className="mt-[85px]"> */}
       <div className="hidden laptop:block">
         <div className="absolute left-0 top-[65px] flex">
           {[...Array(14)].map((_, i) => (
@@ -88,28 +79,8 @@ const Speakers = () => {
               }}
             />
           ))}
-          {/* {[...Array(5)].map((_, i) => (
-            <div
-              key={`top-left-${i + 12}`}
-              className={`w-[40px] h-[40px] ${circleColors[i]} rounded-full ml-4`}
-              style={{
-                animationDelay: `${i * 0.2}s`,
-                marginLeft: i === 0 ? "0" : "20px",
-              }}
-            />
-          ))} */}
         </div>
         <div className="flex">
-          {/* {[...Array(5)].map((_, i) => (
-            <div
-              key={`bottom-right-${i}`}
-              className={`w-[40px] h-[40px] ${circleColors[i]} rounded-full ml-4`}
-              style={{
-                animationDelay: `${i * 0.2}s`,
-                marginLeft: i === 0 ? "0" : "20px",
-              }}
-            />
-          ))} */}
           {[...Array(14)].map((_, i) => (
             <div
               key={`bottom-right-${i}`}
@@ -155,7 +126,6 @@ const Speakers = () => {
           />
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

@@ -14,9 +14,9 @@ const Head = ({ imageSrc, title, name, rollNo, bgColor = "", textColor = "", pos
 
       {/* Text Content */}
       <div className={`mt-[11.11%] md:mt-[50px] text-center ${textColor}`}>
-        <h2 className="text-[clamp(16px,4vw,20px)] md:text-xl font-bold font-[playfair]">{title}</h2>
-        <p className="text-[clamp(14px,3.5vw,18px)] md:text-xl font-bold font-[lora]">{name}</p>
-        <p className="text-[clamp(14px,3.5vw,18px)] md:text-xl font-bold font-[lora] m-[-6]">{rollNo}</p>
+        <h2 className="text-[clamp(16px,4vw,20px)] md:text-xl font-bold font-playfair">{title}</h2>
+        <p className="text-[clamp(14px,3.5vw,18px)] md:text-l font-bold font-[lora]">{name}</p>
+        <p className="text-[clamp(14px,3.5vw,18px)] md:text-sm font-bold font-[lora] m-[-6]">{rollNo}</p>
       </div>
     </div>
   );

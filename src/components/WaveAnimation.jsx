@@ -35,7 +35,7 @@ const AnimatedWave = ({ color = "#AB1D1E" }) => {
   useEffect(() => {
     const updatePositions = () => {
       const screenWidth = window.innerWidth;
-      const scaleFactor = screenWidth / (2040); // Scale positions based on 1440px reference width
+      const scaleFactor = screenWidth >1024 ? 0.6 : 0.4; // Scale positions based on 1440px reference width
 
       const updatedBars = baseBars.map((bar) => ({
         ...bar,

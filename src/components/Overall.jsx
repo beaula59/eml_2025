@@ -18,13 +18,13 @@ const ContactCard = () => {
 
       {/* Text Content */}
       <div className="flex flex-col justify-center space-y-[2vh] w-[65%] sm:w-[70%] lg:w-[75%]">
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center font-bold font-playfair leading-tight">
+          <h2 className="text-lg sm:text-l md:text-2xl lg:text-2xl xl:text-3xl text-center font-bold font-playfair leading-tight">
             Overall Head
           </h2>
-          <span className="text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-[lora] font-bold leading-none text-center">
+          <span className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-[lora] font-bold leading-none text-center">
             Pavan Kumar Shinde
           </span>
-          <span className="text-base sm:text-base md:text-xl lg:text-xl xl:text-2xl hover:text-gray-300 font-[lora] font-bold leading-none text-center">
+          <span className="text-base sm:text-base md:text-lg lg:text-lg xl:text-l hover:text-gray-300 font-[lora] font-bold leading-none text-center">
             <a href="mailto:co22btech11008@iith.ac.in" className="">
               co22btech11008@iith.ac.in
             </a>

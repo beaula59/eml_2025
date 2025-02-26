@@ -6,8 +6,6 @@ import Menu from "../../components/menu";
 import Overall from "../../components/Overall";
 import Teambutton from "../../components/team-button";
 import Navbar from "../../components/Navbar";
-import Head from "../../components/head";
-import Coordinator from "../../components/coordinator";
 import Ss from "./ss/page"; 
 
 export default function Home() {

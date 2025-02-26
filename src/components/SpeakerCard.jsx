@@ -63,13 +63,13 @@ const SpeakerCard = ({ speaker, bgIndex }) => {
 
         <div className="flex justify-end items-end w-full scale-[0.8]">
           <button
-            className={`border ${borderColors[bgIndex]} ${textColors[bgIndex]} px-2 py-1 cursor-pointer rounded-full flex items-center gap-1 transition duration-300
+            className={`border-2 ${borderColors[bgIndex]} ${textColors[bgIndex]} px-2 py-1 cursor-pointer rounded-full flex items-center gap-1 transition duration-300
             hover:bg-white hover:text-black hover:border-black`}
             onClick={handleReadMore}
           >
             Read More
             <span
-              className={`border ${borderColors[bgIndex]} rounded-full px-2 text-lg transition duration-300
+              className={`border-2 ${borderColors[bgIndex]} rounded-full px-2 text-lg transition duration-300
               hover:bg-white hover:text-black hover:border-black`}
             >
               {">"}

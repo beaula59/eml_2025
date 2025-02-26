@@ -31,9 +31,9 @@ const Coordinator = ({ imageSrc, title, name, rollNo }) => {
 
       {/* Text Content (Responsive Size) */}
       <div className="mt-[30%] text-center md:mt-[25px]">
-        <h2 className="text-[clamp(10px,3vw,20px)] font-bold font-[lora] md:text-lg">{title}</h2>
+        <h2 className="text-[clamp(10px,3vw,20px)] font-bold font-[lora] md:text-base">{title}</h2>
         <p className="text-[clamp(8px,3vw,18px)] font-[lora] font-bold md:text-base sm:text-base">{name}</p>
-        <p className="text-[clamp(6px,3vw,16px)] font-[lora] font-bold md:text-base">{rollNo}</p>
+        <p className="text-[clamp(6px,3vw,16px)] font-[lora] font-bold md:text-sm">{rollNo}</p>
       </div>
     </div>
   );

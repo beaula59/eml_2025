@@ -3,9 +3,12 @@ import React, { useRef, useEffect, useCallback, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 const images = [
-  "https://plus.unsplash.com/premium_photo-1693181640721-33d8e1e0ca92?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1692007370455-cafc274e0796?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1693000473130-1f174de51f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "/images/home/carousel/img1.JPG",
+  "/images/home/carousel/img2.jpg",
+  "/images/home/carousel/img3.png",
+  "/images/home/carousel/img4.jpg",
+  "/images/home/carousel/img5.jpg",
+  "/images/home/carousel/img6.jpg",
 ];
 
 const AUTOPLAY_INTERVAL = 3000;
@@ -43,14 +46,14 @@ const Carousel = () => {
   }, [emblaApi, startAutoplay]);
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-screen md:w-[90vw] lg:w-[80vw] mx-auto h-[50vh] md:h-[70vh] lg:h-[80vh]">
       {/* Embla Carousel */}
-      <div className="overflow-hidden w-full h-screen" ref={emblaRef}>
+      <div className="overflow-hidden w-screen md:w-[90vw] lg:w-[80vw] mx-auto h-[50vh] md:h-[70vh] lg:h-[80vh]" ref={emblaRef}>
         <div className="flex relative">
           {images.map((img, index) => (
             <div
               key={index}
-              className="flex-none w-full h-screen bg-cover bg-center relative"
+              className="flex-none w-screen md:w-[90vw] lg:w-[80vw] mx-auto h-[50vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center relative"
               style={{ backgroundImage: `url(${img})` }}
             >
               <div className="absolute inset-0 bg-[#FFFFFF] opacity-60"></div>
@@ -64,9 +67,8 @@ const Carousel = () => {
         {images.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition duration-300 ${
-              activeIndex === index ? "bg-black scale-125" : "bg-gray-400"
-            }`}
+            className={`w-2 h-2 rounded-full transition duration-300 ${activeIndex === index ? "bg-black scale-125" : "bg-gray-400"
+              }`}
             onClick={() => emblaApi && emblaApi.scrollTo(index)}
           />
         ))}
@@ -76,5 +78,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-

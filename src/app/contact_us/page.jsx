@@ -111,12 +111,10 @@ export default function Contact() {
 
               <div className="md:mt-3 mt-4">
                 <h2 className="text-[22px] sm:text-[28px] lg:text-[25px] font-semibold font-[merriweather] text-center">
-                  Love to Hear From You
+                  Would Love to Hear from You
                 </h2>
                 <p className="text-[13px] w-full max-w-[400px] mx-auto sm:text-[15px] lg:text-[1rem] font-[merriweather] text-center opacity-90">
-                  Want to suggest personality for the talk or willing to speak
-                  at one of our Extra Mural Lectures, we would love to hear you.
-                  Here is how you can contact us.
+                Want to suggest a personality for a talk or are you willing to speak at one of our Extra Mural Lectures? We would love to hear your thoughts.
                 </p>
 
                 <form

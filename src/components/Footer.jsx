@@ -15,21 +15,31 @@ function Footer() {
 
                 <div className="container mx-auto rounded-2xl pt-10 md:pt-0 bg-[#5675A2] md:bg-transparent flex flex-col md:flex-row justify-between items-center px-6">
                     {/* Left Section */}
-                    <div className="text-center md:text-left mb-10 md:ml-20">
+                    <div className="text-center md:text-left mb-10 md:ml-20 ">
                         <h2 className="text-xl font-semibold">EML IITH</h2>
                         <img src="/eml1.png" alt="EML Logo" className="w-12 h-12 mx-auto md:mx-0 my-4" />
                         <p className="text-lg font-medium">Follow us:</p>
                         <div className="flex justify-center md:justify-start space-x-4 mt-2">
-                            <FaLinkedin className="text-xl cursor-pointer" />
-                            <FaYoutube className="text-xl cursor-pointer" />
-                            <FaInstagram className="text-xl cursor-pointer" />
-                            <FaFacebook className="text-xl cursor-pointer" />
-                            <FaTimes className="text-xl cursor-pointer" />
+                            <a href="https://in.linkedin.com/in/extra-mural-lectures-iit-hyderabad-246492194" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin className="text-xl cursor-pointer" />
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCVUaV9giaKOLXlf0euvP9Sg" target="_blank" rel="noopener noreferrer">
+                                <FaYoutube className="text-xl cursor-pointer" />
+                            </a>
+                            <a href="https://www.instagram.com/eml_iith/" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram className="text-xl cursor-pointer" />
+                            </a>
+                            <a href="https://www.facebook.com/emliith/" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook className="text-xl cursor-pointer" />
+                            </a>
+                            <a href="https://twitter.com/emliith?s=20" target="_blank" rel="noopener noreferrer">
+                                <FaTimes className="text-xl cursor-pointer" />
+                            </a>
                         </div>
                     </div>
 
                     {/* Right Section - Contact */}
-                    <div className="text-center md:text-right mt-6 md:mt-0 mb-10 md:mr-20">
+                    <div className="text-center md:text-right mt-6 md:mt-0 mb-10 md:mr-20 ">
                         <h2 className="text-xl font-semibold">Contact</h2>
                         <p className="flex items-center justify-center md:justify-end mt-2">
                             <MdLocationOn className="mr-2" /> IIT Hyderabad
@@ -44,7 +54,7 @@ function Footer() {
                 </div>
 
                 {/* Bottom Copyright Section */}
-                <div className="text-center py-5 text-sm bg-[#1D4F7C] w-full absolute bottom-0 left-0 z-[1000]">
+                <div className="text-center py-5 text-sm bg-[#1D4F7C] font-[lora] w-full absolute bottom-0 left-0 z-[1000]">
                     © EML IIT Hyderabad 2025. All rights reserved.
                 </div>
             </footer>

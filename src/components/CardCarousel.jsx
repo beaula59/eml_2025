@@ -1,26 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
 
-const carouselData = [
-  {
-    id: 1,
-    image: "https://i.guim.co.uk/img/media/f73b201a278889cfe66dab43bc75a06543f155e2/0_167_2513_1508/master/2513.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8f6088cadd1a2d0e1a15881c090fee75",
-    title: "Mountain Retreat",
-    description: "Serene mountain landscapes with pristine views"
-  },
-  {
-    id: 2,
-    image: "https://i.guim.co.uk/img/media/f73b201a278889cfe66dab43bc75a06543f155e2/0_167_2513_1508/master/2513.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8f6088cadd1a2d0e1a15881c090fee75",
-    title: "Coastal Paradise",
-    description: "Beautiful beaches with crystal clear waters"
-  },
-  {
-    id: 3,
-    image: "https://i.guim.co.uk/img/media/f73b201a278889cfe66dab43bc75a06543f155e2/0_167_2513_1508/master/2513.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8f6088cadd1a2d0e1a15881c090fee75",
-    title: "Urban Adventure",
-    description: "Exciting city life with modern architecture"
-  }
-];
-
 const ChevronIcon = ({ direction }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -61,17 +40,17 @@ const PlayPauseIcon = ({ isPlaying }) => (
   </svg>
 );
 
-const ImageCardCarousel = () => {
+const ImageCardCarousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [touchStart, setTouchStart] = useState(0);
 
   const nextSlide = useCallback(() => {
-    setCurrentIndex(prev => (prev + 1) % carouselData.length);
+    setCurrentIndex(prev => (prev + 1) % data.length);
   }, []);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex(prev => (prev - 1 + carouselData.length) % carouselData.length);
+    setCurrentIndex(prev => (prev - 1 + data.length) % data.length);
   }, []);
 
   useEffect(() => {
@@ -114,14 +93,14 @@ const ImageCardCarousel = () => {
       >
         <div className="overflow-hidden">
           {[-1, 0, 1].map((offset) => {
-            const index = (currentIndex + offset + carouselData.length) % carouselData.length;
-            const slide = carouselData[index];
+            const index = (currentIndex + offset + data.length) % data.length;
+            const slide = data[index];
             const position = offset === 0 ? 'center' : offset === -1 ? 'left' : 'right';
 
             return (
               <div
                 key={slide.id}
-                className={`absolute w-[40%] left-1/2 transition-all duration-500 ease-in-out transform -translate-x-1/2
+                className={`absolute w-[43%] left-1/2 transition-all duration-500 ease-in-out transform -translate-x-1/2
                   ${position === 'center'
                     ? 'opacity-100 scale-100 z-10'
                     : 'opacity-40 scale-90 z-0 cursor-pointer'
@@ -142,11 +121,11 @@ const ImageCardCarousel = () => {
                       }}
                     />
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-[.9rem] md:text-xl font-bold text-gray-800 mb-2">
+                  <div className="p-3">
+                    <h3 className="text-[.9rem] md:text-l font-bold text-gray-800 mb-2 font-[lora]">
                       {slide.title}
                     </h3>
-                    <p className="text-[.7rem] md:text-[1.1rem] text-gray-600">
+                    <p className="text-[.7rem] md:text-[0.9rem] text-gray-600 font-[lora]">
                       {slide.description}
                     </p>
                   </div>
