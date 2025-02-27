@@ -54,7 +54,7 @@ const Speakers = () => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % speakers.length);
       setBgIndex((prevBgIndex) => (prevBgIndex + 1) % 6);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
 
