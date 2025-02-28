@@ -48,7 +48,7 @@ function Footer() {
                             <MdEmail className="mr-2" /> eml@iith.ac.in
                         </p>
                         <p className="flex items-center justify-center md:justify-end mt-2">
-                            <MdPhone className="mr-2" /> +91 9390291412
+                            <MdPhone className="mr-2" /> +91 8788424840
                         </p>
                     </div>
                 </div>
