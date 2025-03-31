@@ -1,12 +1,12 @@
-'use client'
-import React from 'react';
-import Animation from './HeroAnimation';
+"use client";
+import React from "react";
+import Animation from "./HeroAnimation";
 import { motion } from "framer-motion";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
 };
 
 function Hero() {
@@ -16,7 +16,7 @@ function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(100);
   const [isFinished, setIsFinished] = useState(false);
 
-  const words = ["Energetic Mayhem League?", "Endless Meme Lovers?", "EXTRA-MURAL LECTURES"];
+  const words = ["EXTRA-MURAL LECTURES"];
   const deleteSpeed = 100;
   const pauseBeforeDelete = 1000;
   const pauseBeforeType = 500;
@@ -64,22 +64,36 @@ function Hero() {
     >
       <div className="mx-auto max-w-screen-lg px-4 py-20 h-full">
         <motion.div
-          className='flex flex-col justify-center mx-auto w-full md:w-[48rem] items-center'
+          className="flex flex-col justify-center mx-auto w-full md:w-[48rem] items-center"
           variants={fadeInUp}
         >
-          <motion.div className='flex flex-col lg:flex-row justify-center items-center' variants={fadeInUp}>
+          <motion.div
+            className="flex flex-col lg:flex-row justify-center items-center"
+            variants={fadeInUp}
+          >
             <motion.img
               src="/eml1.png"
               className="w-[15rem] h-[15rem] rounded-full object-cover mb-6 lg:mb-0"
               alt="logo"
               variants={fadeInUp}
             />
-            <motion.div className="text-center lg:text-left" variants={fadeInUp}>
-              <motion.h1 className="w-full lg:w-[28rem] font-[merriweather] font-bold text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[2.5rem] sm:leading-[3rem] md:leading-[3.5rem] lg:leading-[4rem] text-[#1D4F7C] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]" variants={fadeInUp}>
+            <motion.div
+              className="text-center lg:text-left"
+              variants={fadeInUp}
+            >
+              <motion.h1
+                className="w-full lg:w-[28rem] font-[merriweather] font-bold text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] leading-[2.5rem] sm:leading-[3rem] md:leading-[3.5rem] lg:leading-[4rem] text-[#1D4F7C] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+                variants={fadeInUp}
+              >
                 <span>{text}</span>
-                {!isFinished && <span className="inline-block md:w-1 w-[3px] h-7 md:h-11 bg-gradient-to-b from-red-500 to-blue-500 animate-pulse ml-1"></span>}
+                {!isFinished && (
+                  <span className="inline-block md:w-1 w-[3px] h-7 md:h-11 bg-gradient-to-b from-red-500 to-blue-500 animate-pulse ml-1"></span>
+                )}
               </motion.h1>
-              <motion.p className="w-full lg:w-[20rem] font-[merriweather] font-normal text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[1.5rem] sm:leading-[1.75rem] lg:leading-[1.75rem] text-black" variants={fadeInUp}>
+              <motion.p
+                className="w-full lg:w-[20rem] font-[merriweather] font-normal text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] leading-[1.5rem] sm:leading-[1.75rem] lg:leading-[1.75rem] text-black"
+                variants={fadeInUp}
+              >
                 IIT Hyderabad
               </motion.p>
             </motion.div>
@@ -99,28 +113,35 @@ function Hero() {
       </div>
 
       {/* Animation Section */}
-      <motion.div className="relative mx-auto flex justify-center items-center top-2 md:top-6 w-full" variants={fadeInUp}>
-              <Animation />
-            </motion.div>
+      <motion.div
+        className="relative mx-auto flex justify-center items-center top-2 md:top-6 w-full"
+        variants={fadeInUp}
+      >
+        <Animation />
+      </motion.div>
 
-            <motion.div
-              className="mb-12 mt-5 md:-mt-6"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: false, amount: 0.5 }}
-            >
-              <div className="mx-auto max-w-xl text-left text-primary font-playfair italic p-5 ">
-                <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
-                  "STORIES MATTER...,
-                </h1>
-                <p className="mt-4 text-base sm:text-lg md:text-xl ">
-                EML invites individuals from diverse backgrounds to share their life experiences. Here we dive into the depths of infinity and emerge with stories that inspire, challenge, and transform. The limitless potential of the human spirit is not just recognized — it’s celebrated."
-                </p>
-              </div>
-            </motion.div>
-          </motion.section>
-        );
+      <motion.div
+        className="mb-12 mt-5 md:-mt-6"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 0.5 }}
+      >
+        <div className="mx-auto max-w-xl text-left text-primary font-playfair italic p-5 ">
+          <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+            "STORIES MATTER...,
+          </h1>
+          <p className="mt-4 text-base sm:text-lg md:text-xl ">
+            EML invites individuals from diverse backgrounds to share their life
+            experiences. Here we dive into the depths of infinity and emerge
+            with stories that inspire, challenge, and transform. The limitless
+            potential of the human spirit is not just recognized — it’s
+            celebrated."
+          </p>
+        </div>
+      </motion.div>
+    </motion.section>
+  );
 }
 
 export default Hero;
