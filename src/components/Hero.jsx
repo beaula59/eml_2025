@@ -16,7 +16,11 @@ function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(100);
   const [isFinished, setIsFinished] = useState(false);
 
-  const words = ["EXTRA-MURAL LECTURES"];
+  const words = [
+    "Energetic Mayhem League?",
+    "Endless Meme Lovers?",
+    "EXTRA-MURAL LECTURES",
+  ];
   const deleteSpeed = 100;
   const pauseBeforeDelete = 1000;
   const pauseBeforeType = 500;
